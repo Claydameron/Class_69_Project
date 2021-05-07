@@ -20,7 +20,7 @@ export default class BarcodeScanner extends React.Component {
         const scanned = this.state.scanned
         if(buttonState==="clicked" && hasCamPermissions) {
             return(
-                <BarcodeScanner onBarCodeScanned={scanned? undefined : this.handleBarCodeScanner} style={StyleSheet.absoluteFillObject}></BarcodeScanner>
+                <BarCodeScanner onBarCodeScanned={scanned? undefined : this.handleBarCodeScanner} style={StyleSheet.absoluteFillObject}></BarCodeScanner>
             )
         }
 
